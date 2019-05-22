@@ -1,0 +1,8 @@
+.movie{
+	height: 5vh;
+	background-color: #c2c2c2;
+	border: 1px solid black;
+}
+.movie p{
+	margin: 8px;
+}
