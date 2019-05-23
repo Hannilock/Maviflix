@@ -1,20 +1,15 @@
-.movies_holder{
-	display: flex;
-    justify-content: space-between;
-}
 .movie{
 	height: 45vh;
-	width: 14vw;
+	width: 15vw;
 	background-color: grey;
 	border: 2px solid black;
 	overflow: hidden;
-	float: left;
 	transition: 0.5s;
 }
 
 .movie:hover{
 	height: 50vh;
-	width: 15vw;
+	width: 17vw;
 	transition:0.5s;
 }
 
@@ -29,9 +24,4 @@
 	transition:0.5s;
 }
 
-.movie p{
-	position: absolute;
-	color: white;
-	z-index: 99999;
-}
 

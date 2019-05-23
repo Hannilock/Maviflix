@@ -18,6 +18,9 @@ filmes = [];
 filmes[0] = new Filme("Evangelion: 1.0 You Are (Not) Alone", "action", "/imgs/eva1.jpg", "desc here");
 filmes[1] = new Filme("Evangelion: 2.0 You Can (Not) Advance", "mecha", "/imgs/eva2.jpg", "desc here");
 filmes[2] = new Filme("Evangelion: 3.0 You Can (Not) Redo", "drama", "/imgs/eva3.jpg", "desc here");
+filmes[3] = new Filme("Her", "drama", "/imgs/her.jpg", "desc here");
+filmes[4] = new Filme("Les Miserables", "musical", "/imgs/lesmis.jpg", "desc here");
+filmes[5] = new Filme("Doukyuusei", "romance", "/imgs/doukyuusei.jpg", "desc here");
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
