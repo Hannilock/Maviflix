@@ -18,9 +18,10 @@
 	<div>
 		<h1>Filmes</h1>
 		<div id="movies_holder" class='movies_holder'>
-			<% lista.forEach(function(lista) { %>
+			<% lista.forEach(function(l) { %>
 		        <div class="movie">
-		        	<p><%= lista.nome %></p>		        	
+		        	<p><%= l.nome %></p>	
+		        	<img src="<%=l.img%>">	
 		        </div>
 		    <% }); %>
 		</div>

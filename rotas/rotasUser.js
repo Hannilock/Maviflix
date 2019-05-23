@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const router = express.Router();
-app.use(express.static("./../publico"));
+
+app.use(express.static(path.join(__dirname +'/../publico')));
 
 router.get('/', (req, res) =>{
 	res.render('home');

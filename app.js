@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const moduloRotasAdmin = require('./rotas/rotasAdmin');
 const moduloRotasUser = require('./rotas/rotasUser');
-app.use(express.static('./publico'));
+
+app.use(express.static(__dirname + '/publico'));
 
 class Filme{
 	 constructor(nome, tipo, img, desc){
@@ -14,9 +15,9 @@ class Filme{
 }
 
 filmes = [];
-filmes[0] = new Filme("Evangelion: 1.0 You Are (Not) Alone", "action", "imgs/eva1.jpg", "desc here");
-filmes[0] = new Filme("Evangelion: 2.0 You Can (Not) Advance", "mecha", "imgs/eva2.jpg", "desc here");
-filmes[0] = new Filme("Evangelion: 3.0 You Can (Not) Redo", "drama", "imgs/eva3.jpg", "desc here");
+filmes[0] = new Filme("Evangelion: 1.0 You Are (Not) Alone", "action", "/imgs/eva1.jpg", "desc here");
+filmes[1] = new Filme("Evangelion: 2.0 You Can (Not) Advance", "mecha", "/imgs/eva2.jpg", "desc here");
+filmes[2] = new Filme("Evangelion: 3.0 You Can (Not) Redo", "drama", "/imgs/eva3.jpg", "desc here");
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
