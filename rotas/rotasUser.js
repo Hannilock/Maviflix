@@ -30,9 +30,12 @@ router.get('/user/ver-catalogo', (req, res) =>{
 
 router.post('/user/ver-catalogo', urlencodedParser, (req, res) =>{
 	var search = [];
-	for (var i = filmes.length - 1; i >= 0; i--) {
-		if(filmes[i].name == req.body.name){
-			search.concat(filmes[i]);
+	for(var i = 0; i < (filmes.length - 1); i++) {
+		var s = filmes[i].nome;
+		console.log(s.includes(req.body.nome));
+		if(s.includes(req.body.nome)){
+			search.push(filmes[i]);
+			console.log(search.length);
 		}
 	}
 	res.render('homeuser', {lista: search});
