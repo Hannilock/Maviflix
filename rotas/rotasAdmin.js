@@ -21,6 +21,7 @@ router.post('/admin/adicionar', urlencodedParser, (req, res) =>{
 	for (var i = 0; i < filmes.length; i++) {
 		if(filmes[i].nome.includes(req.body.nome)){
 			filmes[i].visi = true;
+			break;
 		}
 	}
 	res.redirect('/admin');
@@ -36,6 +37,7 @@ router.post('/admin/remover', urlencodedParser, (req, res) =>{
 	for (var i = 0; i < filmes.length; i++) {
 		if(filmes[i].nome.includes(req.body.nome)){
 			filmes[i].visi = false;
+			break;
 		}
 	}
 	res.redirect('/admin');
