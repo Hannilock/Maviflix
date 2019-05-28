@@ -19,7 +19,7 @@ router.get('/admin/adicionar', (req, res) =>{
 
 router.post('/admin/adicionar', urlencodedParser, (req, res) =>{
 	for (var i = 0; i < filmes.length; i++) {
-		if(filmes[i].nome.includes(req.body.nome)){
+		if(filmes[i].nome.includes(req.body.titulo)){
 			filmes[i].visi = true;
 			break;
 		}
@@ -35,7 +35,7 @@ router.get('/admin/remover', (req, res) =>{
 
 router.post('/admin/remover', urlencodedParser, (req, res) =>{
 	for (var i = 0; i < filmes.length; i++) {
-		if(filmes[i].nome.includes(req.body.nome)){
+		if(filmes[i].nome.includes(req.body.titulo)){
 			filmes[i].visi = false;
 			break;
 		}

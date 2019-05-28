@@ -24,7 +24,7 @@ router.get('/user/ver-catalogo', (req, res) =>{
 
 router.post('/user/ver-catalogo', urlencodedParser, (req, res) =>{
 	var search = [];
-	for(var i = 0; i < (filmes.length - 1); i++) {
+	for(var i = 0; i < (filmes.length); i++) {
 		var n = filmes[i].nome;
 		if(n.includes(req.body.nome)){
 			search.push(filmes[i]);
