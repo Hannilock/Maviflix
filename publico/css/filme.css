@@ -1,0 +1,22 @@
+.movie{
+	width: 60vw;
+	height: 40vh;
+	border: 2px solid black;
+	margin-bottom: 5vh;
+}
+.posterHolder{
+	float: left;
+	height: 100%;
+	width: 24%;
+	overflow: hidden;
+	border-right: 2px solid black;
+}
+.posterHolder img{
+	object-fit: cover;	
+	width: 100%;
+	height: auto;
+}
+.info{
+	margin-left: 1.5vw;
+	float: left;
+}

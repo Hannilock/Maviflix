@@ -8,3 +8,4 @@ delBut.addEventListener('click', function(e){
 	window.location.href = "/admin/remover";
 });
 
+
